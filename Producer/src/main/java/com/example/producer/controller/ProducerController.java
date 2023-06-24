@@ -13,7 +13,7 @@ public class ProducerController {
     private IProductService productService;
 
     @GetMapping("/increment")
-    public Boolean incrementInventory(){
-        return productService.incrementInventory();
+    public Boolean incrementInventory(Integer id){
+        return productService.incrementInventory(id);
     }
 }

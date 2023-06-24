@@ -5,5 +5,5 @@ import com.example.common.po.ProductPO;
 
 public interface IProductService extends IService<ProductPO> {
 
-    Boolean incrementInventory();
+    Boolean incrementInventory(Integer id);
 }

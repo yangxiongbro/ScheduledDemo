@@ -31,11 +31,13 @@ CREATE TABLE `tb_product`  (
    `caption` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL COMMENT '标题',
    `inventory` int NULL DEFAULT NULL COMMENT '库存',
    PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of tb_product
 -- ----------------------------
-INSERT INTO `tb_product` VALUES (1, '小米13', 1, 4999.00, 'are you ok', '小米13', 1000);
+INSERT INTO `tb_product` VALUES (1, '小米13', 1, 4999.00, 'are you ok', '小米13', 0);
+INSERT INTO `tb_product` VALUES (2, '苹果13', 1, 4999.00, 'one more thing', '苹果13', 0);
+INSERT INTO `tb_product` VALUES (3, '华为mate50', 1, 4999.00, 'abc', '华为mate50', 0);
 
 SET FOREIGN_KEY_CHECKS = 1;

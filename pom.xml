@@ -8,6 +8,7 @@
         <module>Producer</module>
         <module>Consumer</module>
         <module>Common</module>
+        <module>Consumer2</module>
     </modules>
 
     <parent>

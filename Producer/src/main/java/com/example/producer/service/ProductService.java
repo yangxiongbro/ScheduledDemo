@@ -9,9 +9,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProductService extends ServiceImpl<IProductMapper, ProductPO> implements IProductService {
 
-    public synchronized Boolean incrementInventory(){
+    public synchronized Boolean incrementInventory(Integer id){
         boolean result = false;
-        ProductPO product = getById(1);
+        ProductPO product = getById(id);
         if(null != product){
             Integer inventory = product.getInventory();
             System.out.println(inventory + " + " + 1);
